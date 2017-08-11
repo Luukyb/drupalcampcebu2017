@@ -1,0 +1,22 @@
+body {
+  background: url("../images/header_bg.jpg") top center no-repeat;
+}
+
+@media only screen and (min-width: 0px) {
+  .camp_logo_wrapper {
+    background: url("../images/camp_logo_mobile.png") center no-repeat;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .camp_logo_wrapper {
+    background: url("../images/camp_logo_tablet.png") center no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .camp_logo_wrapper {
+    background: url("../images/camp_logo.png") center no-repeat;
+  }
+}
+

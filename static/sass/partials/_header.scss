@@ -1,0 +1,22 @@
+.camp_logo_wrapper {
+  height: 430px;
+  display: grid;
+  img.img-responsive {
+    align-self: center;
+  }
+}
+
+p.headline {
+  color: $dark_text;
+  text-align: center;
+  a {
+    color: $dark_text;
+  }
+}
+
+
+@media only screen and (min-width: 640px) {
+  .camp_logo_wrapper {
+    height: 700px;
+  }
+}
