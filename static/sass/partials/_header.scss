@@ -7,13 +7,13 @@
 }
 
 p.headline {
-  color: $dark_text;
+  margin-top: 20px;
+  color: $minor-color-text;
   text-align: center;
   a {
-    color: $dark_text;
+    color: $minor-color-text;
   }
 }
-
 
 @media only screen and (min-width: 640px) {
   .camp_logo_wrapper {

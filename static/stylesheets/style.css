@@ -1,22 +1,52 @@
 /* line 1, ../sass/partials/_base.scss */
-body {
-  background: url("../images/header_bg.jpg") top center no-repeat;
+html {
+  background-color: #1b002c;
+}
+
+/* line 5, ../sass/partials/_base.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 9, ../sass/partials/_base.scss */
+p {
+  font-family: "Muli", sans-serif;
+}
+
+/* line 13, ../sass/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Saira Condensed", sans-serif;
 }
 
 @media only screen and (min-width: 0px) {
-  /* line 6, ../sass/partials/_base.scss */
+  /* line 18, ../sass/partials/_base.scss */
+  body {
+    background: url("../images/header_bg_sm.jpg") top center no-repeat #1b002c;
+  }
+
+  /* line 21, ../sass/partials/_base.scss */
   .camp_logo_wrapper {
     background: url("../images/camp_logo_mobile.png") center no-repeat;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 12, ../sass/partials/_base.scss */
+  /* line 27, ../sass/partials/_base.scss */
+  body {
+    background: url("../images/header_bg_md.jpg") top center no-repeat #1b002c;
+  }
+
+  /* line 30, ../sass/partials/_base.scss */
   .camp_logo_wrapper {
     background: url("../images/camp_logo_tablet.png") center no-repeat;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 18, ../sass/partials/_base.scss */
+  /* line 36, ../sass/partials/_base.scss */
+  body {
+    background: url("../images/header_bg.jpg") top center no-repeat #1b002c;
+  }
+
+  /* line 39, ../sass/partials/_base.scss */
   .camp_logo_wrapper {
     background: url("../images/camp_logo_tablet_wide.png") center no-repeat;
   }
@@ -33,12 +63,13 @@ body {
 
 /* line 9, ../sass/partials/_header.scss */
 p.headline {
-  color: #701e2c;
+  margin-top: 20px;
+  color: #a04b4e;
   text-align: center;
 }
-/* line 12, ../sass/partials/_header.scss */
+/* line 13, ../sass/partials/_header.scss */
 p.headline a {
-  color: #701e2c;
+  color: #a04b4e;
 }
 
 @media only screen and (min-width: 640px) {

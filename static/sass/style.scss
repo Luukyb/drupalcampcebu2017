@@ -1,8 +1,10 @@
 @import "compass";
 @import "compass/css3";
 
-@import "partials/base";
+// Setup of main variables.
+@import "partials/colors";
 @import "partials/fonts";
+
+@import "partials/base";
 @import "partials/header";
 @import "partials/global";
-
