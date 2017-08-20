@@ -1,4 +1,4 @@
-.camp_logo_wrapper {
+header .camp-logo {
   height: 430px;
   display: grid;
   img.img-responsive {
@@ -6,7 +6,7 @@
   }
 }
 
-p.headline {
+header p.headline {
   margin-top: 20px;
   color: $minor-color-text;
   text-align: center;
@@ -15,8 +15,35 @@ p.headline {
   }
 }
 
+@media only screen and (min-width: 0px) {
+  header .camp-logo {
+    background: url("../images/camp_logo_mobile.png") center no-repeat;
+  }
+}
+
 @media only screen and (min-width: 640px) {
-  .camp_logo_wrapper {
+  header .camp-logo {
     height: 700px;
+    background: url("../images/camp_logo_tablet.png") center no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    .wrapper {
+      // width: 946px;
+    }
+    .camp-logo {
+      margin: 0 auto;
+      width: 946px;
+      height: 560px;
+      background: url("../images/drupal-text-only.svg") center no-repeat;
+      background-size: 946px 560px;
+      text-align: center;
+      img {
+        margin-left: 50%;
+        margin-top: 11%;
+      }
+    }
   }
 }

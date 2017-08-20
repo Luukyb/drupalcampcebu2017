@@ -21,60 +21,68 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 0px) {
   /* line 18, ../sass/partials/_base.scss */
   body {
-    background: url("../images/header_bg_sm.jpg") top center no-repeat #1b002c;
-  }
-
-  /* line 21, ../sass/partials/_base.scss */
-  .camp_logo_wrapper {
-    background: url("../images/camp_logo_mobile.png") center no-repeat;
+    background: url("../images/bg_sm.jpg") top center no-repeat #1b002c;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 27, ../sass/partials/_base.scss */
+  /* line 24, ../sass/partials/_base.scss */
   body {
-    background: url("../images/header_bg_md.jpg") top center no-repeat #1b002c;
-  }
-
-  /* line 30, ../sass/partials/_base.scss */
-  .camp_logo_wrapper {
-    background: url("../images/camp_logo_tablet.png") center no-repeat;
+    background: url("../images/bg_md.jpg") top center no-repeat #1b002c;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 36, ../sass/partials/_base.scss */
+  /* line 30, ../sass/partials/_base.scss */
   body {
-    background: url("../images/header_bg.jpg") top center no-repeat #1b002c;
-  }
-
-  /* line 39, ../sass/partials/_base.scss */
-  .camp_logo_wrapper {
-    background: url("../images/camp_logo_tablet_wide.png") center no-repeat;
+    background: url("../images/bg_lg.jpg") top center no-repeat #1b002c;
   }
 }
 /* line 1, ../sass/partials/_header.scss */
-.camp_logo_wrapper {
+header .camp-logo {
   height: 430px;
   display: grid;
 }
 /* line 4, ../sass/partials/_header.scss */
-.camp_logo_wrapper img.img-responsive {
+header .camp-logo img.img-responsive {
   align-self: center;
 }
 
 /* line 9, ../sass/partials/_header.scss */
-p.headline {
+header p.headline {
   margin-top: 20px;
   color: #a04b4e;
   text-align: center;
 }
 /* line 13, ../sass/partials/_header.scss */
-p.headline a {
+header p.headline a {
   color: #a04b4e;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 0px) {
   /* line 19, ../sass/partials/_header.scss */
-  .camp_logo_wrapper {
+  header .camp-logo {
+    background: url("../images/camp_logo_mobile.png") center no-repeat;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 25, ../sass/partials/_header.scss */
+  header .camp-logo {
     height: 700px;
+    background: url("../images/camp_logo_tablet.png") center no-repeat;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 36, ../sass/partials/_header.scss */
+  header .camp-logo {
+    margin: 0 auto;
+    width: 946px;
+    height: 560px;
+    background: url("../images/drupal-text-only.svg") center no-repeat;
+    background-size: 946px 560px;
+    text-align: center;
+  }
+  /* line 43, ../sass/partials/_header.scss */
+  header .camp-logo img {
+    margin-left: 50%;
+    margin-top: 11%;
   }
 }
