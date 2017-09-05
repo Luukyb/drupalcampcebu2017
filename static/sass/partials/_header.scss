@@ -15,6 +15,34 @@ header p.headline {
   }
 }
 
+// Menu.
+header {
+  ul {
+    text-align: center;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        color: $main-color-text;
+        text-decoration: none;
+        font-size: 23px;
+        font-family: $font-title-regular;
+        padding: 10px 30px;
+      }
+      a:hover,
+      a.active {
+        color: $active-text;
+        text-decoration: none;
+        background-color: $main-color-text;
+        padding: 10px 30px;
+      }
+    }
+    li:not(:last-child) {
+      padding-right: 20px;
+    }
+  }
+}
+
 @media only screen and (min-width: 0px) {
   header .camp-logo {
     background: url("../images/camp_logo_mobile.png") center no-repeat;
