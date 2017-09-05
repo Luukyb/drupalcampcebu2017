@@ -57,21 +57,51 @@ header p.headline a {
   color: #a04b4e;
 }
 
+/* line 20, ../sass/partials/_header.scss */
+header ul {
+  text-align: center;
+}
+/* line 22, ../sass/partials/_header.scss */
+header ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 25, ../sass/partials/_header.scss */
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Saira", sans-serif;
+  padding: 10px 30px;
+}
+/* line 32, ../sass/partials/_header.scss */
+header ul li a:hover,
+header ul li a.active {
+  color: #631d76;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px 30px;
+}
+/* line 40, ../sass/partials/_header.scss */
+header ul li:not(:last-child) {
+  padding-right: 20px;
+}
+
 @media only screen and (min-width: 0px) {
-  /* line 19, ../sass/partials/_header.scss */
+  /* line 47, ../sass/partials/_header.scss */
   header .camp-logo {
     background: url("../images/camp_logo_mobile.png") center no-repeat;
   }
 }
 @media only screen and (min-width: 640px) {
-  /* line 25, ../sass/partials/_header.scss */
+  /* line 53, ../sass/partials/_header.scss */
   header .camp-logo {
     height: 700px;
     background: url("../images/camp_logo_tablet.png") center no-repeat;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 36, ../sass/partials/_header.scss */
+  /* line 64, ../sass/partials/_header.scss */
   header .camp-logo {
     margin: 0 auto;
     width: 946px;
@@ -80,9 +110,13 @@ header p.headline a {
     background-size: 946px 560px;
     text-align: center;
   }
-  /* line 43, ../sass/partials/_header.scss */
+  /* line 71, ../sass/partials/_header.scss */
   header .camp-logo img {
     margin-left: 50%;
     margin-top: 11%;
   }
+}
+/* line 1, ../sass/partials/_global.scss */
+a {
+  font-family: "Saira Condensed", sans-serif;
 }
