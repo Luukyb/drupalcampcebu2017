@@ -1,24 +1,5 @@
 @import 'colors';
-
-$logo-pc-width: 35%;
-$logo-pc-height: $logo-pc-width;
-$logo-pc-margin-left: 12%;
-$logo-pc-margin-top: 40px;
-
-$logo-tablet-width: 27%;
-$logo-tablet-height: $logo-tablet-width;
-$logo-tablet-margin-top: 125px;
-$logo-tablet-margin-left: 37%;
-
-$logo-phone-width: 20%;
-$logo-phone-height: $logo-phone-width;
-$logo-phone-margin-top: 118px;
-$logo-phone-margin-left: 40.5%;
-
-$logo-smallest-width: 28%;
-$logo-smallest-height: $logo-smallest-width;
-$logo-smallest-margin-left: 38%;
-$logo-smallest-margin-top:100px;
+ 
 
 header .camp-logo {
 
@@ -41,10 +22,10 @@ header p.headline {
 
     img { 
 
-      margin-left: $logo-smallest-margin-left;
-      margin-top: $logo-smallest-margin-top;
-      width: $logo-smallest-width;
-      height: $logo-smallest-height;
+      margin-left: 38%;
+      margin-top: 100px;
+      width: 28%;
+      height: 28%;
     }
   }
 }
@@ -55,10 +36,10 @@ header p.headline {
     background: url("../images/camp_logo_mobile.png") center no-repeat;
     
     img {
-      margin-left: $logo-phone-margin-left;
-      margin-top: $logo-phone-margin-top;
-      width: $logo-phone-width;
-      height: $logo-phone-height;
+      margin-left: 40.5%;
+      margin-top: 118px;
+      width: 20%;
+      height: 20%;
     }
   }
 }
@@ -69,10 +50,10 @@ header p.headline {
     background: url("../images/camp_logo_tablet.png") center no-repeat;
     
       img {
-            margin-left: $logo-tablet-margin-left;
-            margin-top: $logo-tablet-margin-top;
-            width: $logo-tablet-width;
-            height: $logo-tablet-height;
+            margin-left: 37%;
+            margin-top: 125px;
+            width: 27%;
+            height: 27%;
 
       }
   }
@@ -91,10 +72,10 @@ header p.headline {
       background-size: 946px 560px;
       text-align: center;
       img {
-        width: $logo-pc-width;
-        height: $logo-pc-height;
-        margin-left: $logo-pc-margin-left;
-        margin-top: $logo-pc-margin-top;
+        width: 35%;
+        height: 35%;
+        margin-left: 12%;
+        margin-top: 40px;
       }
     }
   }
