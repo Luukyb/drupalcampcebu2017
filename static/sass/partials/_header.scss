@@ -1,7 +1,5 @@
-@import 'colors';
-@import 'fonts';
-
 header p.headline {
+  font-size: 14px;
   margin-top: 20px;
   color: $minor-color-text;
   text-align: center;
@@ -25,6 +23,7 @@ header .camp-logo {
 
 // Main menu.
 menu {
+  margin-bottom: 100px;
   ul {
     text-align: center;
     margin: 0;
@@ -48,13 +47,22 @@ menu {
     }
     li:last-child {
       padding-top: 50px;
-      a {
-        color: $active-text;
-        text-decoration: none;
-        background-color: $main-color-text;
-        padding: 10px 30px;
-      }
     }
+  }
+}
+
+body .gold-sponsor {
+  h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+body .early-bird-block {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  p.button-link {
+    margin-top: 50px;
   }
 }
 
@@ -82,7 +90,6 @@ menu {
       }
     }
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
