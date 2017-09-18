@@ -1,66 +1,92 @@
-header .camp-logo {
-  height: 430px;
-  display: grid;
-  img.img-responsive {
-    align-self: center;
-  }
-}
+@import 'colors';
+@import 'fonts';
 
 header p.headline {
   margin-top: 20px;
   color: $minor-color-text;
   text-align: center;
+  font-family: $font-title-regular;
   a {
     color: $minor-color-text;
+    font-family: $font-title-regular;
   }
 }
 
-// Menu.
-header {
+header .camp-logo {
+  height: 350px;
+  background: url("../images/camp_logo_mobile.png") center center no-repeat;
+  img {
+    margin-left: 36.5%;
+    margin-top: 34px;
+    width: 30%;
+    height: 41%;
+  }
+}
+
+// Main menu.
+menu {
   ul {
     text-align: center;
+    margin: 0;
+    padding: 0;
     li {
       list-style: none;
       display: inline-block;
+      width: 100%;
       a {
         color: $main-color-text;
         text-decoration: none;
+        text-transform: uppercase;
         font-size: 23px;
         font-family: $font-title-regular;
         padding: 10px 30px;
+        font-weight: 700;
       }
-      a:hover,
-      a.active {
+      a:hover {
+        color: $main-color-text;
+      }
+    }
+    li:last-child {
+      padding-top: 50px;
+      a {
         color: $active-text;
         text-decoration: none;
         background-color: $main-color-text;
         padding: 10px 30px;
       }
     }
-    li:not(:last-child) {
-      padding-right: 20px;
-    }
   }
 }
 
-@media only screen and (min-width: 0px) {
-  header .camp-logo {
-    background: url("../images/camp_logo_mobile.png") center no-repeat;
-  }
-}
-
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) and (max-width: 1023px){
   header .camp-logo {
     height: 700px;
-    background: url("../images/camp_logo_tablet.png") center no-repeat;
+    background: url("../images/camp_logo_tablet.png") center center no-repeat;
+    img {
+      margin-left: 37%;
+      margin-top: 125px;
+      width: 27%;
+      height: 34%;
+    }
   }
+  menu {
+    ul {
+      li {
+        display: inline;
+        a {
+          font-size: 19px;
+        }
+      }
+      li:last-child {
+        display: inline-block;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
   header {
-    .wrapper {
-      // width: 946px;
-    }
     .camp-logo {
       margin: 0 auto;
       width: 946px;
@@ -69,8 +95,17 @@ header {
       background-size: 946px 560px;
       text-align: center;
       img {
-        margin-left: 50%;
-        margin-top: 11%;
+        width: 35%;
+        height: 35%;
+        margin-left: 12%;
+        margin-top: 40px;
+      }
+    }
+  }
+  menu {
+    ul {
+      li {
+        display: inline;
       }
     }
   }
