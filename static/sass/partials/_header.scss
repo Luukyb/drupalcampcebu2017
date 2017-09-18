@@ -1,10 +1,4 @@
-header .camp-logo {
-  height: 430px;
-  display: grid;
-  img.img-responsive {
-    align-self: center;
-  }
-}
+@import 'colors';
 
 header p.headline {
   margin-top: 20px;
@@ -15,24 +9,32 @@ header p.headline {
   }
 }
 
-@media only screen and (min-width: 0px) {
-  header .camp-logo {
-    background: url("../images/camp_logo_mobile.png") center no-repeat;
+header .camp-logo {
+  height: 350px;
+  background: url("../images/camp_logo_mobile.png") center center no-repeat;
+  img {
+    margin-left: 36.5%;
+    margin-top: 34px;
+    width: 30%;
+    height: 41%;
   }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) and (max-width: 1023px){
   header .camp-logo {
     height: 700px;
-    background: url("../images/camp_logo_tablet.png") center no-repeat;
+    background: url("../images/camp_logo_tablet.png") center center no-repeat;
+    img {
+      margin-left: 37%;
+      margin-top: 125px;
+      width: 27%;
+      height: 34%;
+    }
   }
 }
 
 @media only screen and (min-width: 1024px) {
   header {
-    .wrapper {
-      // width: 946px;
-    }
     .camp-logo {
       margin: 0 auto;
       width: 946px;
@@ -41,8 +43,10 @@ header p.headline {
       background-size: 946px 560px;
       text-align: center;
       img {
-        margin-left: 50%;
-        margin-top: 11%;
+        width: 35%;
+        height: 35%;
+        margin-left: 12%;
+        margin-top: 40px;
       }
     }
   }
