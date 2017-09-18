@@ -36,65 +36,46 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../images/bg_lg.jpg") top center no-repeat #1b002c;
   }
 }
-/* line 8, ../sass/partials/_header.scss */
+/* line 3, ../sass/partials/_header.scss */
 header p.headline {
   margin-top: 20px;
   color: #a04b4e;
   text-align: center;
 }
-/* line 12, ../sass/partials/_header.scss */
+/* line 7, ../sass/partials/_header.scss */
 header p.headline a {
   color: #a04b4e;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 289px) {
-  /* line 19, ../sass/partials/_header.scss */
-  header .camp-logo {
-    height: 500px;
-    background: url("../images/camp_logo_mobile.png") center no-repeat;
-  }
-  /* line 23, ../sass/partials/_header.scss */
-  header .camp-logo img {
-    margin-left: 38%;
-    margin-top: 100px;
-    width: 28%;
-    height: 28%;
-  }
+/* line 12, ../sass/partials/_header.scss */
+header .camp-logo {
+  height: 350px;
+  background: url("../images/camp_logo_mobile.png") center center no-repeat;
 }
-@media only screen and (min-width: 289px) and (max-width: 640px) {
-  /* line 34, ../sass/partials/_header.scss */
-  header .camp-logo {
-    height: 500px;
-    background: url("../images/camp_logo_mobile.png") center no-repeat;
-  }
-  /* line 38, ../sass/partials/_header.scss */
-  header .camp-logo img {
-    margin-left: 40.5%;
-    margin-top: 118px;
-    width: 20%;
-    height: 20%;
-  }
+/* line 15, ../sass/partials/_header.scss */
+header .camp-logo img {
+  margin-left: 36.5%;
+  margin-top: 34px;
+  width: 30%;
+  height: 41%;
 }
+
 @media only screen and (min-width: 640px) and (max-width: 1023px) {
-  /* line 48, ../sass/partials/_header.scss */
+  /* line 24, ../sass/partials/_header.scss */
   header .camp-logo {
     height: 700px;
-    background: url("../images/camp_logo_tablet.png") center no-repeat;
+    background: url("../images/camp_logo_tablet.png") center center no-repeat;
   }
-  /* line 52, ../sass/partials/_header.scss */
+  /* line 27, ../sass/partials/_header.scss */
   header .camp-logo img {
     margin-left: 37%;
     margin-top: 125px;
     width: 27%;
-    height: 27%;
+    height: 34%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 64, ../sass/partials/_header.scss */
-  header .wrapper {
-    /* width: 946px;*/
-  }
-  /* line 67, ../sass/partials/_header.scss */
+  /* line 38, ../sass/partials/_header.scss */
   header .camp-logo {
     margin: 0 auto;
     width: 946px;
@@ -103,7 +84,7 @@ header p.headline a {
     background-size: 946px 560px;
     text-align: center;
   }
-  /* line 74, ../sass/partials/_header.scss */
+  /* line 45, ../sass/partials/_header.scss */
   header .camp-logo img {
     width: 35%;
     height: 35%;

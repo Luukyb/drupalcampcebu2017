@@ -1,9 +1,4 @@
 @import 'colors';
- 
-
-header .camp-logo {
-
-}
 
 header p.headline {
   margin-top: 20px;
@@ -14,56 +9,32 @@ header p.headline {
   }
 }
 
-
-@media only screen and (min-width: 0px) and (max-width: 289px) {
-  header .camp-logo {
-      height: 500px;
-      background: url("../images/camp_logo_mobile.png") center no-repeat;
-
-    img { 
-
-      margin-left: 38%;
-      margin-top: 100px;
-      width: 28%;
-      height: 28%;
-    }
-  }
-}
-
-@media only screen and (min-width: 289px) and (max-width: 640px) {
-  header .camp-logo {
-    height: 500px;
-    background: url("../images/camp_logo_mobile.png") center no-repeat;
-    
-    img {
-      margin-left: 40.5%;
-      margin-top: 118px;
-      width: 20%;
-      height: 20%;
-    }
+header .camp-logo {
+  height: 350px;
+  background: url("../images/camp_logo_mobile.png") center center no-repeat;
+  img {
+    margin-left: 36.5%;
+    margin-top: 34px;
+    width: 30%;
+    height: 41%;
   }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1023px){
   header .camp-logo {
     height: 700px;
-    background: url("../images/camp_logo_tablet.png") center no-repeat;
-    
-      img {
-            margin-left: 37%;
-            margin-top: 125px;
-            width: 27%;
-            height: 27%;
-
-      }
+    background: url("../images/camp_logo_tablet.png") center center no-repeat;
+    img {
+      margin-left: 37%;
+      margin-top: 125px;
+      width: 27%;
+      height: 34%;
+    }
   }
 }
 
 @media only screen and (min-width: 1024px) {
   header {
-    .wrapper {
-      /* width: 946px;*/
-    }
     .camp-logo {
       margin: 0 auto;
       width: 946px;
