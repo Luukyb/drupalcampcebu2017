@@ -1,11 +1,14 @@
 @import 'colors';
+@import 'fonts';
 
 header p.headline {
   margin-top: 20px;
   color: $minor-color-text;
   text-align: center;
+  font-family: $font-title-regular;
   a {
     color: $minor-color-text;
+    font-family: $font-title-regular;
   }
 }
 
@@ -20,6 +23,41 @@ header .camp-logo {
   }
 }
 
+// Main menu.
+menu {
+  ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+      a {
+        color: $main-color-text;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 23px;
+        font-family: $font-title-regular;
+        padding: 10px 30px;
+        font-weight: 700;
+      }
+      a:hover {
+        color: $main-color-text;
+      }
+    }
+    li:last-child {
+      padding-top: 50px;
+      a {
+        color: $active-text;
+        text-decoration: none;
+        background-color: $main-color-text;
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 640px) and (max-width: 1023px){
   header .camp-logo {
     height: 700px;
@@ -31,6 +69,20 @@ header .camp-logo {
       height: 34%;
     }
   }
+  menu {
+    ul {
+      li {
+        display: inline;
+        a {
+          font-size: 19px;
+        }
+      }
+      li:last-child {
+        display: inline-block;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -47,6 +99,13 @@ header .camp-logo {
         height: 35%;
         margin-left: 12%;
         margin-top: 40px;
+      }
+    }
+  }
+  menu {
+    ul {
+      li {
+        display: inline;
       }
     }
   }
