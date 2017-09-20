@@ -200,3 +200,25 @@ body .early-bird-block p.button-link {
     display: inline;
   }
 }
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  background-color: #000;
+  padding: 100px 0 100px 0;
+}
+/* line 4, ../sass/partials/_footer.scss */
+footer .camp-logo-footer {
+  text-align: center;
+  margin: 0 0 10px;
+}
+/* line 8, ../sass/partials/_footer.scss */
+footer p {
+  font-size: 18px;
+}
+/* line 11, ../sass/partials/_footer.scss */
+footer a:hover {
+  color: #fff;
+}
+/* line 14, ../sass/partials/_footer.scss */
+footer img {
+  width: 100px;
+}
