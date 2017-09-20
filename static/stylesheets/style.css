@@ -218,3 +218,7 @@ footer p {
 footer a:hover {
   color: #fff;
 }
+/* line 14, ../sass/partials/_footer.scss */
+footer img {
+  width: 100px;
+}
