@@ -200,6 +200,41 @@ body .early-bird-block p.button-link {
     display: inline;
   }
 }
+/* line 1, ../sass/partials/content.scss */
+.region.top-content {
+  background: url("../images/top-content-bg.jpg") top center no-repeat;
+}
+/* line 4, ../sass/partials/content.scss */
+.region.top-content .keynote-speaker img {
+  display: none;
+}
+/* line 7, ../sass/partials/content.scss */
+.region.top-content .keynote-speaker h2 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 35px;
+}
+/* line 12, ../sass/partials/content.scss */
+.region.top-content .keynote-speaker h3 {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+/* line 16, ../sass/partials/content.scss */
+.region.top-content .keynote-speaker p {
+  color: #b8b8b8;
+  font-size: 18px;
+}
+/* line 20, ../sass/partials/content.scss */
+.region.top-content .keynote-speaker h2, .region.top-content .keynote-speaker h3, .region.top-content .keynote-speaker p {
+  text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 29, ../sass/partials/content.scss */
+  .region.top-content .keynote-speaker img {
+    display: block;
+  }
+}
 /* line 1, ../sass/partials/_footer.scss */
 footer {
   background-color: #000;
