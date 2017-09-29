@@ -13,6 +13,12 @@ a {
     padding: 10px 30px;
     text-transform: uppercase;
     font-weight: 700;
+    &:hover {
+      color: $minor-color-text;
+    }
+  }
+  &:hover {
+    color: $main-color-text;
   }
 }
 

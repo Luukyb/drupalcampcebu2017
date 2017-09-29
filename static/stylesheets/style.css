@@ -18,8 +18,16 @@ a.button-link {
   text-transform: uppercase;
   font-weight: 700;
 }
+/* line 16, ../sass/partials/_base.scss */
+a.button-link:hover {
+  color: #a04b4e;
+}
+/* line 20, ../sass/partials/_base.scss */
+a:hover {
+  color: #fff;
+}
 
-/* line 19, ../sass/partials/_base.scss */
+/* line 25, ../sass/partials/_base.scss */
 p {
   font-family: "Muli", sans-serif;
   font-size: 20px;
@@ -28,7 +36,7 @@ p {
   text-align: center;
 }
 
-/* line 27, ../sass/partials/_base.scss */
+/* line 33, ../sass/partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Saira", sans-serif;
   color: #fff;
@@ -36,38 +44,38 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* line 34, ../sass/partials/_base.scss */
+/* line 40, ../sass/partials/_base.scss */
 h3 {
   font-size: 20px;
   font-family: "Muli", sans-serif;
   font-weight: 200;
 }
 
-/* line 40, ../sass/partials/_base.scss */
+/* line 46, ../sass/partials/_base.scss */
 body {
   background: url("../images/bg_sm.jpg") top center no-repeat #1b002c;
 }
-/* line 42, ../sass/partials/_base.scss */
+/* line 48, ../sass/partials/_base.scss */
 body .text-display-large {
   display: none;
 }
 
 @media only screen and (min-width: 640px) {
-  /* line 48, ../sass/partials/_base.scss */
+  /* line 54, ../sass/partials/_base.scss */
   body {
     background: url("../images/bg_md.jpg") top center no-repeat #1b002c;
   }
-  /* line 50, ../sass/partials/_base.scss */
+  /* line 56, ../sass/partials/_base.scss */
   body .text-display-small {
     display: none;
   }
-  /* line 53, ../sass/partials/_base.scss */
+  /* line 59, ../sass/partials/_base.scss */
   body .text-display-large {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 60, ../sass/partials/_base.scss */
+  /* line 66, ../sass/partials/_base.scss */
   body {
     background: url("../images/bg_lg.jpg") top center no-repeat #1b002c;
   }
@@ -200,37 +208,37 @@ body .early-bird-block p.button-link {
     display: inline;
   }
 }
-/* line 1, ../sass/partials/content.scss */
+/* line 1, ../sass/partials/_content.scss */
 .region.top-content {
   background: url("../images/top-content-bg.jpg") top center no-repeat;
 }
-/* line 4, ../sass/partials/content.scss */
+/* line 4, ../sass/partials/_content.scss */
 .region.top-content .keynote-speaker img {
   display: none;
 }
-/* line 7, ../sass/partials/content.scss */
+/* line 7, ../sass/partials/_content.scss */
 .region.top-content .keynote-speaker h2 {
   margin-top: 0;
   font-weight: 700;
   font-size: 35px;
 }
-/* line 12, ../sass/partials/content.scss */
+/* line 12, ../sass/partials/_content.scss */
 .region.top-content .keynote-speaker h3 {
   margin-top: 100px;
   margin-bottom: 0;
 }
-/* line 16, ../sass/partials/content.scss */
+/* line 16, ../sass/partials/_content.scss */
 .region.top-content .keynote-speaker p {
   color: #b8b8b8;
   font-size: 18px;
 }
-/* line 20, ../sass/partials/content.scss */
+/* line 20, ../sass/partials/_content.scss */
 .region.top-content .keynote-speaker h2, .region.top-content .keynote-speaker h3, .region.top-content .keynote-speaker p {
   text-align: left;
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 29, ../sass/partials/content.scss */
+  /* line 29, ../sass/partials/_content.scss */
   .region.top-content .keynote-speaker img {
     display: block;
   }
@@ -240,48 +248,59 @@ body .early-bird-block p.button-link {
   padding-bottom: 100px;
 }
 /* line 3, ../sass/partials/_footer.scss */
-.footer-top-wrapper h2 {
-  text-transform: capitalize;
-  padding-bottom: 10px;
-  padding-top: 30px;
+.footer-top-wrapper h1, .footer-top-wrapper h2, .footer-top-wrapper h3, .footer-top-wrapper h4, .footer-top-wrapper h5, .footer-top-wrapper h6 {
+  text-align: left;
+  text-transform: none;
   font-weight: 600;
 }
-/* line 9, ../sass/partials/_footer.scss */
-.footer-top-wrapper p {
-  font-size: 16px;
+/* line 8, ../sass/partials/_footer.scss */
+.footer-top-wrapper h2 {
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 /* line 12, ../sass/partials/_footer.scss */
-.footer-top-wrapper p.cit-details {
+.footer-top-wrapper p {
+  font-size: 16px;
+  text-align: left;
   margin: 0;
 }
-/* line 15, ../sass/partials/_footer.scss */
+/* line 16, ../sass/partials/_footer.scss */
 .footer-top-wrapper p.button-link {
-  padding-top: 15px;
-}
-/* line 18, ../sass/partials/_footer.scss */
-.footer-top-wrapper a:hover {
-  color: #fff;
+  margin-top: 20px;
 }
 
-/* line 23, ../sass/partials/_footer.scss */
+/* line 22, ../sass/partials/_footer.scss */
 .footer-bottom-wrapper {
   background-color: #000;
-  padding: 100px 0 100px 0;
+  padding-bottom: 70px;
 }
-/* line 26, ../sass/partials/_footer.scss */
+/* line 25, ../sass/partials/_footer.scss */
 .footer-bottom-wrapper .camp-logo-footer {
   text-align: center;
-  margin: 0 0 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 /* line 30, ../sass/partials/_footer.scss */
 .footer-bottom-wrapper p {
-  font-size: 18px;
+  font-size: 14px;
 }
-/* line 33, ../sass/partials/_footer.scss */
-.footer-bottom-wrapper a:hover {
-  color: #fff;
+/* line 32, ../sass/partials/_footer.scss */
+.footer-bottom-wrapper p.copyrights {
+  color: #b8b8b8;
 }
 /* line 36, ../sass/partials/_footer.scss */
 .footer-bottom-wrapper img {
-  width: 100px;
+  width: 80px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 43, ../sass/partials/_footer.scss */
+  .footer-top-wrapper p {
+    margin: 0 0 5px;
+    padding-bottom: 5px;
+  }
+  /* line 46, ../sass/partials/_footer.scss */
+  .footer-top-wrapper p.button-link {
+    margin-top: 10px;
+  }
 }
