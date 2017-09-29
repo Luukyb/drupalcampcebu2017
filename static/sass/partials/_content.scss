@@ -1,6 +1,9 @@
-.region.top-content {
+.page-main {
   background: url("../images/top-content-bg.jpg") top center no-repeat;
-  .keynote-speaker {
+}
+
+.region.top-content {
+  .one-speaker {
     img {
       display: none;
     }
@@ -23,9 +26,25 @@
   }
 }
 
+.region.content {
+  .three-speakers {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    h2 {
+      font-weight: 700;
+    }
+  }
+}
+
+.region.bottom-content {
+  .sponsor {
+    margin-bottom: 70px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .region.top-content {
-    .keynote-speaker {
+    .one-speaker {
       img {
         display: block;
       }
