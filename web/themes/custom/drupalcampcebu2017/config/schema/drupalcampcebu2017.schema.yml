@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+drupalcampcebu2017.settings:
+  type: theme_settings
+  label: 'drupalcampcebu2017 settings'
