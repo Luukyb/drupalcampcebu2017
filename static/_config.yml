@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Drupalcamp Cebu 2017, November 25 2017
-email: leo@prometsource.com
+email: drupalcebu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Drupalcamp Cebu is a one day conference about Web development with
   sessions about Drupal, DevOPS, UI/UX and Business.
