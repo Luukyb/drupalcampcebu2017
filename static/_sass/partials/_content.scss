@@ -1,5 +1,6 @@
 .page-main {
   background: url("../images/top-content-bg.jpg") top center no-repeat;
+  background-size: cover;
 }
 
 .region.top-content {
@@ -44,11 +45,18 @@
     margin-bottom: 70px;
   }
 }
-
 .sponsor {
   img {
     margin: 0 35px;
     max-width: 250px;
+  }
+}
+
+#venue {
+  padding-bottom: 3em;
+
+  h2 {
+    font-weight: 700;
   }
 }
 

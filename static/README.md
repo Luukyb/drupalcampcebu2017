@@ -1,4 +1,4 @@
-# Drupalcamp Cebu 2017 - Static
+# Drupalcamp Cebu 2017 Theme - Static
 
 ## Info
 This static theme uses [Jekyll](https://jekyllrb.com) for better organization and maintainability.
