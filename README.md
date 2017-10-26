@@ -1,29 +1,19 @@
-# Drupalcamp Cebu 2017
+# Drupalcamp Cebu 2017 Theme - Static
 
-[![Build Status](https://travis-ci.org/Luukyb/drupalcampcebu2017.svg?branch=develop)](https://travis-ci.org/Luukyb/drupalcampcebu2017)
+## Info
+This static theme uses [Jekyll](https://jekyllrb.com) for better organization and maintainability.
 
-This project provides all the resources required for the development of the Drupal 8 website for Drupalcamp Cebu 2017.
+## Requirements
+1. [RVM](https://rvm.io) is recommended.
+2. Please look at `.ruby-version` for the Ruby version used. It's also ideal to use the same version and RVM can help with that without affecting other project versions.
 
-## Usage
+## Setup
+1. Make sure to install [Bundler](http://bundler.io/) first.
+2. Run `bundle install` to install the gems needed.
+3. Once gem installation is successful, Run `bundle exec jekyll serve`. This will run the Jekyll gem installed for this project.
 
-First you need a system to run Drupal according to the requirements on production: Nginx and PHP. Contact [@luukyb](https://github.com/Luukyb) for the exact details. We recommend you to use [Expresso PHP](https://github.com/expresso-php/expresso-php) a quick and simple docker setup for all your PHP development.
+## Sitemap
+* To update the sitemap.xml file to include more than the homepage, run `bundle exec jekyll build`.
+* To exclude pages from the sitemap.xml file, just add `sitemap: false` in the Front Matter of the post/page.
 
-You will also need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
-
-## What is inside this repo?
-
-This repo contains:
-
-* drush: Drush aliases and helpers for drush.
-* scripts: Scripts used for development and by composer.
-* static: Static version of the site. This is used for front-end development, and is symlinked 
-  to Drupal's theme.
-* web: Those are the files of Drupal 8, and the Drupal theme.
-
-This project is based on [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project) 
-a Composer template for Drupal projects.
-
-## About this project.
-
-This project is made by the [Drupal Cebu User Group](https://www.facebook.com/groups/drupalcebu/)
-and is Open Source under GNU General Public License v2.0.
+Reference: [Jekyll Sitemap Generator Plugin](https://github.com/jekyll/jekyll-sitemap)
