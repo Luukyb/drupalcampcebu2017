@@ -32,6 +32,12 @@ sass:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
