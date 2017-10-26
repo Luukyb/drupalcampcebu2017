@@ -8,6 +8,9 @@
     img {
       display: none;
     }
+    .img-wrapper {
+      text-align: center;
+    }
     h2 {
       margin-top: 0;
       font-weight: 700;
@@ -40,6 +43,12 @@
 .region.bottom-content {
   .sponsor {
     margin-bottom: 70px;
+  }
+}
+.sponsor {
+  img {
+    margin: 0 35px;
+    max-width: 250px;
   }
 }
 
