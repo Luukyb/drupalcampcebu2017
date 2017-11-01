@@ -112,7 +112,7 @@ body .early-bird-block {
       width: 946px;
       height: 560px;
       background: url("../images/drupal-text-only.svg") center no-repeat;
-      background-size: 946px 560px;
+      background-size: contain;
       text-align: center;
       img {
         width: 35%;
