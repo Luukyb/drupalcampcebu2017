@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="region gold-sponsor">
+      <div class="container">
+        <div class="col-md-12">
+          {% include regions/sponsor_gold.html %}
+        </div>
+      </div>
+    </div>
+
+    <main class="page-main" aria-label="Content">
+      <div class="region top-content">
+        <div class="container">
+          {% include regions/home_top_content.html %}
+        </div>
+      </div>
+
+      <div class="region content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="region bottom-content">
+        <div class="container">
+          {% include regions/sponsor_gold.html %}
+          {% include regions/sponsor_silver.html %}
+          {% include regions/sponsor_bronze.html %}
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="container">
+      {% include regions/venue.html %}
+    </div> -->
+
+    {% include footer.html %}
+
+    {% include scripts_bottom.html %}
+  </body>
+
+</html>
