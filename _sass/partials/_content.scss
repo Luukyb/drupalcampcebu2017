@@ -45,10 +45,29 @@
     margin-bottom: 70px;
   }
 }
+
 .sponsor {
+  .sponsor-columns {
+    height: auto;
+    display: table;
+    margin-bottom: 35px;
+  }
+  .img-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .img-wrapper.last {
+    margin-bottom: 0;
+  }
   img {
-    margin: 0 35px;
     max-width: 250px;
+  }
+}
+
+.silver-sponsor {
+  .sponsor-columns {
+    height: 100px;
   }
 }
 
