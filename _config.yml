@@ -18,7 +18,7 @@ email: drupalcebu@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Drupalcamp Cebu is a one day conference about Web development with
   sessions about Drupal, DevOPS, UI/UX and Business.
-baseurl: "/drupalcampcebu2017" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://2017.drupalcebu.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: DrupalCampCebu
 
