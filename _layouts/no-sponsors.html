@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="no-banner">
+
+    <header>
+      <div class="container">
+        {% include regions/menu.html %}
+      </div>
+    </header>
+
+    <main class="page-main" aria-label="Content">
+      <div class="region content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="container">
+      {% include regions/venue.html %}
+    </div> -->
+
+    {% include footer.html %}
+
+    {% include scripts_bottom.html %}
+  </body>
+
+</html>

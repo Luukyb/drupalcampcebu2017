@@ -3,9 +3,14 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="banner">
 
-    {% include header.html %}
+    <header>
+      <div class="container">
+        {% include regions/banner.html %}
+        {% include regions/menu.html %}
+      </div>
+    </header>
 
     <div class="region gold-sponsor">
       <div class="container">
@@ -34,6 +39,7 @@
             {% include regions/sponsor_gold.html %}
             {% include regions/sponsor_silver.html %}
             {% include regions/sponsor_bronze.html %}
+            <p><a class="button-link" href="/sponsors">See all sponsors and partners</a></p>
           </div>
         </div>
       </div>
