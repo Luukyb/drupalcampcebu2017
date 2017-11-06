@@ -13,7 +13,11 @@
       <a href="#">Pricing</a>
     </li> -->
     <li>
-      <a href="/sponsors">Sponsors</a>
+      {% if page.url == "/sponsors/" %}
+        <a href="/sponsors" class="active">Sponsors</a>
+      {% else %}
+        <a href="/sponsors">Sponsors</a>
+      {% endif %}
     </li>
     <!-- <li>
       <a href="#venue">Venue</a>

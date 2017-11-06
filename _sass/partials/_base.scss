@@ -14,11 +14,11 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     &:hover {
-      color: $minor-color-text;
+      color: $minor-bg-text;
     }
   }
   &:hover {
-    color: $main-color-text;
+    color: $minor-bg-text;
   }
 }
 
@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $main-color-text;
   text-align: center;
   text-transform: uppercase;
+}
+
+body.no-banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 h3 {

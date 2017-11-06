@@ -22,11 +22,23 @@ header .camp-logo {
 }
 
 // Main menu.
-menu {
-  margin-bottom: 100px;
-  img {
+body.no-banner {
+  menu {
+    margin-bottom: 25px;
+  }
+  menu img {
     width: 40px;
   }
+}
+body.banner {
+  menu {
+    margin-bottom: 100px;
+  }
+  menu img {
+    display: none;
+  }
+}
+menu {
   ul {
     text-align: center;
     margin: 0;
@@ -45,7 +57,10 @@ menu {
         font-weight: 700;
       }
       a:hover {
-        color: $active-text;
+        color: $main-color-text;
+      }
+      a.active {
+        text-decoration: underline;
       }
     }
     li:last-child {
