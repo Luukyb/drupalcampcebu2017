@@ -1,0 +1,32 @@
+sponsors:
+  - category: Gold
+    list:
+      - name: Promet Source
+        logo: images/promet-source-logo.png
+        link: https://www.prometsource.com
+
+      - name: Srijan
+        logo: images/srijan-logo.png
+        link: https://www.srijan.net
+
+  - category: Silver
+    list:
+      - name: Pantheon
+        logo: images/pantheon-logo.png
+        link: https://pantheon.io
+
+      - name: ANNAI
+        logo: images/annai-logo.png
+        link: https://annai.co.jp/en
+
+  - category: Bronze
+    list:
+      - name: Powerstorm Tech
+        logo: images/powerstorm-logo.png
+        link: https://www.powerstormtech.com
+
+  - category: Coffee and snacks
+    list:
+      - name: SkyrockIT
+        logo: images/skyrockit-logo.png
+        link: https://www.skyrockit.com

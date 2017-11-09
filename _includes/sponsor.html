@@ -1,0 +1,17 @@
+{% comment %}
+@param include.show array
+  Use "All" to display all sponsors or specify the category names.
+{% endcomment %}
+
+{% for item in site.data.sponsors.sponsors %}
+  {% if include.show contains "All" or include.show contains item.category %}
+    <div class="sponsor {{ item.category | downcase | replace: ' ','' }}-sponsor clearfix">
+      <h2>{{ item.category }} Sponsor</h2>
+      <ul>
+        {% for sponsor in item.list %}
+          <li><a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo"></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endfor %}

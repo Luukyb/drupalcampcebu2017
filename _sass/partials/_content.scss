@@ -30,6 +30,10 @@
   }
 }
 
+body.no-banner .content {
+  padding-bottom: 100px;
+}
+
 .region.content {
   .three-speakers {
     margin-top: 50px;
@@ -46,28 +50,28 @@
   }
 }
 
-.sponsor {
-  .sponsor-columns {
-    height: auto;
-    display: table;
-    margin-bottom: 35px;
-  }
-  .img-wrapper {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-  .img-wrapper.last {
-    margin-bottom: 0;
-  }
-  img {
-    max-width: 250px;
-  }
+body.no-banner .sponsor {
+  margin-bottom: 50px;
 }
 
-.silver-sponsor {
-  .sponsor-columns {
-    height: 100px;
+.sponsor {
+  ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 25px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img {
+    max-width: 250px;
   }
 }
 

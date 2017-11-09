@@ -3,14 +3,23 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="no-banner">
 
-    {% include header.html %}
+    <header>
+      <div class="container">
+        <div class="row">
+          {% include regions/menu.html %}
+        </div>
+      </div>
+    </header>
 
     <div class="region gold-sponsor">
       <div class="container">
-        <div class="col-md-12">
-          {% include regions/sponsor_gold.html %}
+        <div class="row">
+          <div class="col-md-12">
+            {% assign to_show = "Gold" | split: ',' %}
+            {% include sponsor.html show=to_show %}
+          </div>
         </div>
       </div>
     </div>
@@ -18,21 +27,27 @@
     <main class="page-main" aria-label="Content">
       <div class="region top-content">
         <div class="container">
-          {% include regions/home_top_content.html %}
+          <div class="row">
+            {% include regions/home_top_content.html %}
+          </div>
         </div>
       </div>
 
       <div class="region content">
         <div class="container">
-          {{ content }}
+          <div class="row">
+            {{ content }}
+          </div>
         </div>
       </div>
 
       <div class="region bottom-content">
         <div class="container">
-          {% include regions/sponsor_gold.html %}
-          {% include regions/sponsor_silver.html %}
-          {% include regions/sponsor_bronze.html %}
+          <div class="row">
+            {% assign to_show = "All" | split: ',' %}
+            {% include sponsor.html show=to_show %}
+            <p><a class="button-link" href="/sponsors">See all sponsors and partners</a></p>
+          </div>
         </div>
       </div>
     </main>
