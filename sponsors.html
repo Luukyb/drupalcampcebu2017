@@ -4,26 +4,17 @@ title: Sponsors
 permalink: /sponsors/
 ---
 
-<h1>Sponsors</h1>
-
-<div class="clearfix">
-  <div class="col-md-10 col-md-push-1 clearfix">
-    <p>
-    Drupalcamp Cebu is probably the only Drupalcamp in South East Asia this year. It would not have been possible without the support of our sponsors.
-    A huge THANKS to them for making Drupalcamp Cebu possible and supporting the community in this part of the world.
-    </p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-push-1 clearfix">
+      <h1>Sponsors</h1>
+      <p>Drupalcamp Cebu is probably the only Drupalcamp in South East Asia this year. It would not have been possible without the support of our sponsors.
+      A huge THANKS to them for making Drupalcamp Cebu possible and supporting the community in this part of the world.</p>
+    </div>
   </div>
-</div>
 
-{% include regions/sponsor_gold.html %}
-{% include regions/sponsor_silver.html %}
-{% include regions/sponsor_bronze.html %}
-
-<div class="sponsor clearfix">
-  <div class="col-md-12">
-    <h3>Coffee and snacks sponsor</h3>
-    <p>
-      <a href="https://www.skyrockit.com/" target="_blank"><img src="{{ "images/skyrockit-logo.png" | relative_url }}" alt="SkyrockIT logo" /></a>
-    </p>
-  </div>
+  <div class="row"><div class="col-md-12">
+    {% assign to_show = "All" | split: ',' %}
+    {% include sponsor.html show=to_show %}
+  </div></div>
 </div>

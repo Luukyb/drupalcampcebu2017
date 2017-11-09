@@ -15,7 +15,8 @@
     <div class="region gold-sponsor">
       <div class="container">
         <div class="col-md-12">
-          {% include regions/sponsor_gold.html %}
+          {% assign to_show = "Gold" | split: ',' %}
+          {% include sponsor.html show=to_show %}
         </div>
       </div>
     </div>
@@ -36,9 +37,8 @@
       <div class="region bottom-content">
         <div class="container">
           <div class="row">
-            {% include regions/sponsor_gold.html %}
-            {% include regions/sponsor_silver.html %}
-            {% include regions/sponsor_bronze.html %}
+            {% assign to_show = "Gold,Silver,Bronze" | split: ',' %}
+            {% include sponsor.html show=to_show %}
             <p><a class="button-link" href="/sponsors">See all sponsors and partners</a></p>
           </div>
         </div>
