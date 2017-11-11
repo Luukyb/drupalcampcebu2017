@@ -14,11 +14,11 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     &:hover {
-      color: $minor-color-text;
+      color: $minor-bg-text;
     }
   }
   &:hover {
-    color: $main-color-text;
+    color: $minor-bg-text;
   }
 }
 
@@ -37,6 +37,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+body.no-banner h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
 h3 {
   font-size: 20px;
   font-family: $font-text;
@@ -44,7 +50,10 @@ h3 {
 }
 
 body {
-  background: url("../images/bg_sm.jpg") top center no-repeat $main-bg-color;
+  background-color: $main-bg-color;
+  &.banner {
+    background: url("../images/bg_sm.jpg") top center no-repeat $main-bg-color;
+  }
   .text-display-large {
     display: none;
   }
@@ -52,7 +61,9 @@ body {
 
 @media only screen and (min-width: 640px) {
   body {
-    background: url("../images/bg_md.jpg") top center no-repeat $main-bg-color;
+    &.banner {
+      background: url("../images/bg_md.jpg") top center no-repeat $main-bg-color;
+    }
     .text-display-small {
       display: none;
     }
@@ -64,6 +75,8 @@ body {
 
 @media only screen and (min-width: 1024px) {
   body {
-    background: url("../images/bg_lg.jpg") top center no-repeat $main-bg-color;
+    &.banner {
+      background: url("../images/bg_lg.jpg") top center no-repeat $main-bg-color;
+    }
   }
 }

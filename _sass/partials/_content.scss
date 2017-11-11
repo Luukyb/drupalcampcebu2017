@@ -30,6 +30,10 @@
   }
 }
 
+body.no-banner .content {
+  padding-bottom: 100px;
+}
+
 .region.content {
   .three-speakers {
     margin-top: 50px;
@@ -45,9 +49,28 @@
     margin-bottom: 70px;
   }
 }
+
+body.no-banner .sponsor {
+  margin-bottom: 50px;
+}
+
 .sponsor {
+  ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 25px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   img {
-    margin: 0 35px;
     max-width: 250px;
   }
 }
