@@ -23,9 +23,13 @@
         <a href="/sponsors">Sponsors</a>
       {% endif %}
     </li>
-    <!-- <li>
-      <a href="#venue">Venue</a>
-    </li> -->
+    <li>
+      {% if page.url == "/venue/" %}
+        <a href="/venue" class="active">Venue</a>
+      {% else %}
+        <a href="/venue">Venue</a>
+      {% endif %}
+    </li>
     <li>
       <a class="button-link" href="https://www.eventbrite.com/e/drupalcamp-cebu-2017-tickets-1836622387" target="_blank">Register</a>
     </li>
