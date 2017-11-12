@@ -8,4 +8,5 @@ layout: home
 <div class="three-speakers col-md-12">
   <h2>Featured Speakers</h2>
   <p>Stay tuned we will announce our speakers soon.</p>
+  <p><a class="button-link" href="/schedule">See all the sessions</a></p>
 </div>
