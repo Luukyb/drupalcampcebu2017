@@ -1,6 +1,7 @@
 .page-main {
   background: url("../images/top-content-bg.jpg") top center no-repeat;
-  background-size: cover;
+  // @TODO: Disable cover only for specific pages, example: schedule.
+  // background-size: cover;
 }
 
 .region.top-content {

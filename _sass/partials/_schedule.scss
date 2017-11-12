@@ -1,0 +1,34 @@
+// Schedule page styling.
+.session-speakers {
+  margin-bottom: 70px;
+}
+
+.session {
+  margin-bottom: 50px;
+}
+
+.session-time {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.session-room {
+  background-color: $minor-bg-text;
+  text-transform: uppercase;
+}
+
+.session-topic {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.session-category {
+  background-color: $blue-bg-color;
+  text-transform: uppercase;
+}
+
+.session-level {
+  background-color: $red-bg-color;
+  text-transform: uppercase;
+}

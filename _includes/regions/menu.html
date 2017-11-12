@@ -5,11 +5,15 @@
     </li>
     <!-- <li>
       <a href="#">Speakers</a>
-    </li>
+    </li> -->
     <li>
-      <a href="#">Schedule</a>
+      {% if page.url == "/schedule/" %}
+        <a href="/schedule" class="active">Schedule</a>
+      {% else %}
+        <a href="/schedule">Schedule</a>
+      {% endif %}
     </li>
-    <li>
+    <!-- <li>
       <a href="#">Pricing</a>
     </li> -->
     <li>
