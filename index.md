@@ -7,11 +7,11 @@ layout: home
 
 <div class="container">
   <div class="row">
-    <div class="featured-speaker-wrapper clearfix">
+    <div class="col-md-12 featured-speaker-wrapper clearfix">
       {% include regions/featured_speakers.html %}
-      <div class="col-md-12">
-        <p><a class="button-link" href="/schedule">See all the sessions</a></p>
-      </div>
+    </div>
+    <div class="col-md-12 featured-speaker-button clearfix">
+      <p><a class="button-link" href="/schedule">See all the sessions</a></p>
     </div>
   </div>
 </div>
