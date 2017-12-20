@@ -5,6 +5,7 @@ html {
 a {
   font-family: $font-title;
   color: $main-color-text;
+  text-decoration: underline;
 
   &.button-link {
     color: $active-text;
